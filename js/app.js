@@ -31,13 +31,34 @@ function showSlides(n){
     slides[slideIndex - 1 ].style.display='flex'
 }
 
-// skills 
 
+// skills
 const bars = document.querySelectorAll(".progress__bar");
 bars.forEach(function (bar) {
-  let percentage = bar.dataset.percent;
-  let tooltip = bar.children[0];
-  tooltip.innterText = percentage + "%";
-  bar.style.width = percentage + "%";
- 
-});
+    let percentage = bar.dataset.percent;
+    let tooltip = bar.children[0];
+    tooltip.innerText = percentage + "%"
+    bar.style.width = percentage + "%"
+})
+
+
+
+
+// days
+let dayEl = document.querySelector("#day")
+DateEl = new Date();
+var weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+
+let day = weekday[DateEl.getDay()]
+
+dayEl.innerHTML = day + "..!";
+
+
+
