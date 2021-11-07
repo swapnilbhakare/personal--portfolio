@@ -42,23 +42,48 @@ bars.forEach(function (bar) {
 })
 
 
+// days 
+let dayEl = document.querySelector("#day");
 
-
-// days
-let dayEl = document.querySelector("#day")
 DateEl = new Date();
 var weekday = new Array(7);
-weekday[0] = "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";
+weekday[0]="Sunday";
+weekday[1]="Monday";
+weekday[2]="Tuesday";
+weekday[3]="Wednesday";
+weekday[4]="Thursday";
+weekday[5]="Friday";
+weekday[6]="Saturday";
 
 let day = weekday[DateEl.getDay()]
+dayEl.innerHTML = `${day}...!`
 
-dayEl.innerHTML = day + "..!";
+ 
+// change background color when scroll
+
+function scrollWin() {
+    let bodyEl = document.querySelector("body");
+   let linkEl = document.querySelectorAll(".nav-link");
+  
+
+   
+    if (window.pageYOffset >= 500) {
+      bodyEl.classList.add("changeColor");
+      bodyEl.style.color = "#fff";
+      linkEl.forEach(link=> link.style.color = "#fff")
+      nav.style.display = 'none'
+      
+    }
+    if (window.pageYOffset <= 500) {
+      bodyEl.classList.remove("changeColor");
+      bodyEl.style.color = "black";
+      linkEl.forEach(link=> link.style.color = "#000")
+     
+
+    }
+    
+  }
+
 
 
 

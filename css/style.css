@@ -212,21 +212,21 @@ section#about .right div p {
 section#skills {
   margin: 20px auto;
 }
-h2.section_heading {
+
+h2.section_heading{
   position: relative;
   display: inline-block;
 }
-h2.section_heading::after {
-  content: "";
-  background: tomato;
+h2.section_heading::after{
+  content: '';
+  background: var(--primary-color);
   width: 80%;
   height: 2px;
-  position: absolute;
   left: 0;
   bottom: -3px;
-
-  border-bottom: 2px solid var(--primary-color);
+  position: absolute;
 }
+
 section#skills .content {
   margin-top: 60px;
   display: grid;
@@ -319,108 +319,113 @@ section.skills
   text-transform: uppercase;
 }
 /* work section style */
-.work .row {
+.work .row{
   margin: 50px 0;
   align-items: flex-start;
 }
-
-.work .row .left,
-.work .row .right {
+.work .row .left,.work .row .right{
   width: 50%;
-}
 
+}
 .work .row .content h2,
 .work .row .content p,
-.work .row .content h3 {
+.work .row .content h3{
   margin-bottom: 20px;
-}
 
-.work .row .content h2 {
+}
+.work .row .content h2{
   font-size: 2.2rem;
 }
-.work .row .content h3 {
+.work .row .content h3{
   font-size: 1.5rem;
 }
-.work .row .content p {
+.work .row .content p{
   font-size: 1rem;
   width: 90%;
-
   line-height: 1.6;
 }
-.work .row .content a {
+.work .row .content a{
   display: inline-block;
   background: var(--primary-color);
   padding: 10px 20px;
-  display: inline-block;
   text-decoration: none;
   color: var(--white);
   border-radius: 4px;
   font-size: 1rem;
   font-weight: bold;
-  transition: all 0.4s ease-in-out;
+  transition: all .3s ease-in-out;
+
 }
-.work .row .content a:hover {
+.work .row .content a:hover{
   background: transparent;
   color: var(--dark);
 }
-
-.work .row .img-wrapper img {
+.work .row .img-wrapper img{
   position: relative;
   width: 100%;
-  transition: 1s;
   object-fit: cover;
 }
-
 .work .row .right .content h2,
-.work .row .right .content p,
 .work .row .right .content h3,
-.work .row .right .content a {
+.work .row .right .content p,
+.work .row .right .content a{
   margin-left: 50px;
+
 }
 /* footer style */
-footer {
+footer{
   padding-bottom: 25px;
 }
-footer .left,
-footer .right {
-  width: 50%;
+footer div.flex{
+  margin-bottom: 10px;
 }
 
-footer .left h4 {
+
+footer .left,footer .right{
+  width: 50%;
+
+
+}
+footer .left h4{
   font-size: 36px;
   font-weight: normal;
+  text-transform: capitalize;
 }
-
-footer .left h4 > span {
+footer .left h4 > span{
   font-size: 45px;
   font-weight: bold;
   text-transform: capitalize;
 }
-footer .social_section {
+footer .social_section{
   margin-left: 50px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
   grid-column-gap: 150px;
   grid-row-gap: 50px;
 }
-footer .social_section a {
+footer .social_section a{
   color: var(--dark);
   transition: all .3s ease-in-out;
 }
-footer .social_section a:hover {
+footer .social_section a:hover{
   color: var(--primary-color);
 }
-footer .contact_section {
-  margin-left: 50px;
-  margin-top: 50px;
-}
-footer .contact_section p#contact {
+footer .contact_section p#contact{
   text-align: left;
   font-size: 20px;
   text-decoration: underline;
+  text-transform: uppercase;
+
 }
-footer .contact_section p {
+footer .contact_section p{
   font-size: 16px;
   margin: 15px 0;
+
+}
+/* This class is used in js for background change */
+
+.changeColor {
+  background: black;
+  transition: ease-in 2s;
 }

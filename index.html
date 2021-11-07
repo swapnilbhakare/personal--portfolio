@@ -23,7 +23,7 @@
     <!-- custom stylesheet link -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body onscroll="scrollWin()">
     <!-- Preloader -->
     <div class="preloader">
       <img src="./images/preloader.gif" alt="" srcset="" />
@@ -35,16 +35,16 @@
       </div>
       <ul class="flex">
         <li>
-          <a href="#">About</a>
+          <a class="nav-link" href="#">About</a>
         </li>
         <li>
-          <a href="#">Skills</a>
+          <a class="nav-link" href="#">Skills</a>
         </li>
         <li>
-          <a href="#">Work</a>
+          <a class="nav-link" href="#">Work</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
     </nav>
@@ -111,12 +111,12 @@
             </div>
             <div class="timeline__wrapper">
               <div class="item">
-                <p>2006 - 2016</p>
+                <p>2015 - 2016</p>
                 <p class="center">High School</p>
                 <p>Secondary Education</p>
               </div>
               <div class="item">
-                <p>2006 - 2016</p>
+                <p>2017 - 2020</p>
                 <p class="center">University</p>
                 <p>Bachelor of Computer Application</p>
               </div>
@@ -168,36 +168,34 @@
       </div>
     </section>
 
+    <!-- work section -->
     <section id="work" class="container work">
-      <h2 class="section_heading">My Work</h2>
+      <h2 class="section_heading">My work</h2>
       <div class="flex row">
         <div class="left">
           <div class="content">
             <h2>Food website landing page fully responsive</h2>
-            <h3>A simple webpage of Food site</h3>
+            <h3>A simple webpage of Food website</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-              voluptates tempore voluptatem optio cumque aspernatur sint sequi
-              dicta corporis! Illum expedita nam dolorem deserunt ratione quia
-              quis atque tempora nesciunt.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque,
+              laborum unde? Nulla aut veniam modi voluptatibus, voluptatem
+              magnam odio sint labore odit dicta. Dicta, error explicabo. Rem
+              modi laborum sapiente.
             </p>
             <a href="#">Read More</a>
           </div>
         </div>
         <div class="right">
           <div class="img-wrapper">
-            <a href="#">
-              <img src="./images/img-1.png" alt="food website" />
-            </a>
+            <img src="./images/img-1.png" alt="food website" />
           </div>
         </div>
       </div>
+
       <div class="flex row">
         <div class="left">
           <div class="img-wrapper">
-            <a href="#">
-              <img src="./images/img-2.jpg" alt="food website" />
-            </a>
+            <img src="./images/img-2.jpg" alt="Social website" />
           </div>
         </div>
         <div class="right">
@@ -205,76 +203,73 @@
             <h2>Social proof section</h2>
             <h3>A simple webpage of Social proof section</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-              voluptates tempore voluptatem optio cumque aspernatur sint sequi
-              dicta corporis! Illum expedita nam dolorem deserunt ratione quia
-              quis atque tempora nesciunt.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque,
+              laborum unde? Nulla aut veniam modi voluptatibus, voluptatem
+              magnam odio sint labore odit dicta. Dicta, error explicabo. Rem
+              modi laborum sapiente.
             </p>
             <a href="#">Read More</a>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- footer section -->
     <footer class="container">
       <div class="flex">
         <div class="left">
           <h4>
-            start a conversation... <br />
-            Have a Fantastic,Energetic,mindblowing <br />
-            and positive <br />
+            Start a conversation... <br>
+            Have a Fantastic,Energetic,Mindblowing </br>
+            and positive <br>
             <span id="day"></span>
           </h4>
         </div>
         <div class="right">
           <div class="social_section flex">
-            <a
-              class="social-links"
-              data-aos="zoom-in"
-              href="#"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
-            <a
-              data-aos="zoom-in"
-              class="social-links"
-              href="#"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              class="social-links"
-              data-aos="zoom-in"
-              href="#"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a
-              class="social-links"
-              data-aos="zoom-in"
-              href="#"
-              ><i class="fab fa-instagram"></i></a
-            ><a
-              class="social-links"
-              href="#"
-              data-aos="zoom-in"
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a
-              class="social-links"
-              href="#"
-              data-aos="zoom-in"
-              ><i class="fab fa-facebook"></i
-            ></a>
+            <a href="" class="social-links">
+              <i class="fab fa-whatsapp"></i>
+
+            </a>
+            <a href="" class="social-links">
+              <i class="fab fa-github"></i>
+
+            </a>
+            <a href="" class="social-links">
+              <i class="fab fa-linkedin"></i>
+
+            </a>
+            <a href="" class="social-links">
+              <i class="fab fa-instagram"></i>
+
+            </a>
+            <a href="" class="social-links">
+              <i class="fab fa-twitter"></i>
+
+            </a>
+            <a href="" class="social-links">
+              <i class="fab fa-facebook"></i>
+
+            </a>
+
           </div>
           <div class="contact_section">
-            <p id="contact">START A CONVERSATION</p>
+            <p id="contact">Start a conversation</p>
             <div>
               <p>swapnilbhakare7@gmail.com</p>
               <p>+91 9999999999</p>
             </div>
+
           </div>
         </div>
       </div>
+
       <hr>
-      <span>@copyright 2020 Swapnil Bhakare</span>
+      <span>@copyright 2021 Swapnil Bhakare</span>
+
     </footer>
+
+
 
     <script src="./js/app.js"></script>
   </body>
