@@ -175,7 +175,7 @@ section#about .left div {
 }
 
 section#about .left div a {
-  color: var(--secondary-color);
+  color: var(--white);
   font-weight: 600;
   font-size: 1.2rem;
 }
@@ -241,22 +241,22 @@ section.skills .content .left .heading {
   margin-bottom: 2rem;
 }
 section.skills .content .left .heading i {
-  color: var(--dark);
+  color: var(--white);
   font-size: 52px;
 }
 
 section.skills .content .left .heading h5 {
   font-size: 16px;
   margin-top: 0.5rem;
-  color: var(--dark);
+  color: var(--white);
 }
 section.skills .content .left p {
   font-size: 14px;
-  color: var(--dark);
+  color: var(--white);
   line-height: 1.7;
 }
 section.skills .content .left p.center {
-  color: var(--dark);
+  color: var(--white);
 }
 section.skills .content .left .item {
   margin-bottom: 2.6rem;
@@ -278,7 +278,7 @@ section.skills .content .left .item::after {
   margin-left: -21px;
 }
 section.skills .skills__wrapper .skill-box h4 {
-  color: var(--secondary-color);
+  color: var(--white);
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 500;
@@ -293,7 +293,7 @@ section.skills .skills__wrapper .skill-box .progress__wrap {
   height: 6px;
   width: 100%;
   border-radius: 10px;
-  border: 2px solid var(--secondary-color);
+  border: 2px solid var(--dark-gray);
   box-sizing: 0px 0px 1px 0.25px #4d79f6;
 }
 section.skills .skills__wrapper .skill-box .progress__wrap .progress__bar {
@@ -314,7 +314,7 @@ section.skills
   right: -15px;
   top: -30px;
   margin-bottom: 10px;
-  color: var(--fade);
+  color: var(--white);
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -358,7 +358,7 @@ section.skills
 }
 .work .row .content a:hover{
   background: transparent;
-  color: var(--dark);
+  color: var(--white);
 }
 .work .row .img-wrapper img{
   position: relative;
@@ -405,7 +405,7 @@ footer .social_section{
   grid-row-gap: 50px;
 }
 footer .social_section a{
-  color: var(--dark);
+  color: var(--white);
   transition: all .3s ease-in-out;
 }
 footer .social_section a:hover{
@@ -414,6 +414,7 @@ footer .social_section a:hover{
 footer .contact_section p#contact{
   text-align: left;
   font-size: 20px;
+  margin-top: 30px;
   text-decoration: underline;
   text-transform: uppercase;
 
@@ -424,8 +425,9 @@ footer .contact_section p{
 
 }
 /* This class is used in js for background change */
-
-.changeColor {
-  background: black;
+.changeColor{
+  background: var(--secondary-color);
   transition: ease-in 2s;
+  color: var(--white);
+
 }

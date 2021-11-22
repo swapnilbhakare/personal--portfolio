@@ -22,6 +22,7 @@
 
     <!-- custom stylesheet link -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/aos.css">
   </head>
   <body onscroll="scrollWin()">
     <!-- Preloader -->
@@ -66,8 +67,8 @@
     </section>
     <!-- about section -->
     <section id="about" class="container flex">
-      <div class="left">
-        <div class="flex">
+      <div class="left" >
+        <div class="flex" data-aos="fade-right">
           <a href="#">
             GitHub
             <span class="fas fa-arrow-right"></span>
@@ -82,15 +83,15 @@
           </a>
         </div>
       </div>
-      <div class="right">
+      <div class="right"  >
         <div>
-          <h3>
+          <h3 data-aos="fade-left">
             I am 23 years old Developer,I believe that I am an enthusiastic
             person,passionate about web technologies, Personality😇 is like , I
             believe in hard work. Having confidence on myself and love to learn
             new things. Having leadership quality, and mutual understanding.
           </h3>
-          <p>
+          <p data-aos="fade-left">
             Intrested in knowing people 😍 their thoughts 🗯 and thinking
             process,ideas💭 etc. for me🧘‍♀️ spirituality is the most important
             thing one can apply in their life.for being different from crowd you
@@ -101,9 +102,9 @@
       </div>
     </section>
     <section id="skills" class="container skills">
-      <h2 class="section_heading">Education &amp; Skills</h2>
+      <h2 class="section_heading" data-aos="fade-right">Education &amp; Skills</h2>
       <div class="content flex">
-        <div class="left">
+        <div class="left" data-aos="fade-right">
           <div class="inner__left">
             <div class="heading">
               <i class="fas fa-graduation-cap"></i>
@@ -136,7 +137,7 @@
             </div>
           </div>
         </div>
-        <div class="right">
+        <div class="right" data-aos="fade-left">
           <div class="skills__wrapper">
             <div class="skill-box">
               <h4>HTML & CSS</h4>
@@ -170,11 +171,11 @@
 
     <!-- work section -->
     <section id="work" class="container work">
-      <h2 class="section_heading">My work</h2>
+      <h2 class="section_heading" data-aos="fade-right">My work</h2>
       <div class="flex row">
         <div class="left">
-          <div class="content">
-            <h2>Food website landing page fully responsive</h2>
+          <div class="content"data-aos="fade-right" >
+            <h2 >Food website landing page fully responsive</h2>
             <h3>A simple webpage of Food website</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque,
@@ -186,7 +187,7 @@
           </div>
         </div>
         <div class="right">
-          <div class="img-wrapper">
+          <div class="img-wrapper" data-aos="fade-left">
             <img src="./images/img-1.png" alt="food website" />
           </div>
         </div>
@@ -194,12 +195,12 @@
 
       <div class="flex row">
         <div class="left">
-          <div class="img-wrapper">
+          <div class="img-wrapper" data-aos="fade-right">
             <img src="./images/img-2.jpg" alt="Social website" />
           </div>
         </div>
         <div class="right">
-          <div class="content">
+          <div class="content" data-aos="fade-left">
             <h2>Social proof section</h2>
             <h3>A simple webpage of Social proof section</h3>
             <p>
@@ -218,7 +219,7 @@
     <footer class="container">
       <div class="flex">
         <div class="left">
-          <h4>
+          <h4 data-aos="fade-right">
             Start a conversation... <br>
             Have a Fantastic,Energetic,Mindblowing </br>
             and positive <br>
@@ -226,7 +227,7 @@
           </h4>
         </div>
         <div class="right">
-          <div class="social_section flex">
+          <div class="social_section flex" data-aos="fade-left">
             <a href="" class="social-links">
               <i class="fab fa-whatsapp"></i>
 
@@ -253,7 +254,7 @@
             </a>
 
           </div>
-          <div class="contact_section">
+          <div class="contact_section" data-aos="fade-left">
             <p id="contact">Start a conversation</p>
             <div>
               <p>swapnilbhakare7@gmail.com</p>
@@ -265,12 +266,18 @@
       </div>
 
       <hr>
-      <span>@copyright 2021 Swapnil Bhakare</span>
+      <span data-aos="fade-right">@copyright 2021 Swapnil Bhakare</span>
 
     </footer>
 
 
 
     <script src="./js/app.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
   </body>
 </html>

@@ -58,31 +58,30 @@ weekday[6]="Saturday";
 let day = weekday[DateEl.getDay()]
 dayEl.innerHTML = `${day}...!`
 
- 
-// change background color when scroll
 
-function scrollWin() {
-    let bodyEl = document.querySelector("body");
-   let linkEl = document.querySelectorAll(".nav-link");
-  
+// change bacground color 
+function scrollWin(){
 
-   
-    if (window.pageYOffset >= 500) {
-      bodyEl.classList.add("changeColor");
-      bodyEl.style.color = "#fff";
-      linkEl.forEach(link=> link.style.color = "#fff")
-      nav.style.display = 'none'
-      
-    }
-    if (window.pageYOffset <= 500) {
-      bodyEl.classList.remove("changeColor");
-      bodyEl.style.color = "black";
-      linkEl.forEach(link=> link.style.color = "#000")
-     
-
-    }
     
-  }
+let bodyEl = document.querySelector("body");
+let linkEl = document.querySelectorAll(".nav-link")
+if(window.pageYOffset>=500){
+    bodyEl.classList.add('changeColor')
+    linkEl.forEach(link=>link.style.color ='#fff')
+
+}
+if(window.pageYOffset<=500){
+    bodyEl.classList.remove('changeColor')
+    linkEl.forEach(link=>link.style.color ='#000')
+
+}
+
+}
+
+
+
+ 
+
 
 
 
